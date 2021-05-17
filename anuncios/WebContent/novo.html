@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Anúncios</title>
+<link rel="icon" href="imagens/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Criar novo anúncio</h1>
+	<form name="formContato" action="insert">
+		<table>
+		<tr>
+			<td><input type="text" name="nomeAnuncio" placeholder="Nome do Anuncio" class="caixa1"></td>
+		</tr>
+		<tr>
+			<td><input type="text" name="cliente" placeholder="Cliente" class="caixa1"></td>
+		</tr>							
+		<tr>
+			<td><input type="date" name="dataInicio" placeholder="xx/xx/xxxx" class="caixa2"></td>
+		</tr>		
+		<tr>
+			<td><input type="date" name="dataFim" placeholder="xx/xx/xxxx" class="caixa2"></td>
+		</tr>		
+		<tr>
+			<td><input type="number" name="investimento" placeholder="Valor Investido R$" class="caixa2"></td>
+		</tr>		
+		</table>
+		<input type="button" value="Adicionar" class="botao1" onclick="validar()">	
+	</form>
+	
+<script src="scripts/validador.js"></script>
+</body>
+</html>
